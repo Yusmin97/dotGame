@@ -41,11 +41,14 @@
 
         gameBox.appendChild(dotCreate);
         // gameBox.style.position = 'absolute';
-        dotCreate.style.width = '50px';
-        dotCreate.style.height = '50px';
-        dotCreate.style.borderRadius = '50px';
-        dotCreate.style.backgroundColor = 'blue';
-        dotCreate.style.position = 'absolute';
+        dotCreate.style.cssText =
+          'width: 50px; height: 50px; border-radius: 50px; background-color: blue; position: absolute';
+
+        // dotCreate.style.width = '50px';
+        // dotCreate.style.height = '50px';
+        // dotCreate.style.borderRadius = '50px';
+        // dotCreate.style.backgroundColor = 'blue';
+        // dotCreate.style.position = 'absolute';
 
         dotCreate.addEventListener('click', function (event) {
           let x = Math.floor(Math.random() * event.pageX + 200);
